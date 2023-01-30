@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode | default `en-US` }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>{{.Title}}</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Map CSS -->
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css"
+    />
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="/assets/css/libs.bundle.css" />
+
+    <!--
+      Theme Sans Serif CSS
+      Remove the "disabled" attribute if you want to enable Sans Serif for headings.
+    -->
+    <link
+      rel="stylesheet"
+      href="/assets/css/theme-sans-serif.bundle.css"
+      id="themeSansSerif"
+      disabled
+    />
+
+    <!--
+      Demo JS
+      Remove the code below on a production website.
+    -->
+    <script src="/assets/js/demo.bundle.js"></script>
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="/assets/css/theme.bundle.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-togglable fixed-top">
+      <div class="container-lg">
+        <!-- Brand -->
+        <a class="navbar-brand d-lg-none" href="{{.Site.Params.logo_link}}"
+          >Neta Grill</a
+        >
+
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navigation -->
+          <ul class="navbar-nav justify-content-end w-100">
+            {{ range .Site.Menus.mainr }}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ .URL | absLangURL }}" role="button">
+                {{.Name}}
+              </a>
+            </li>
+            {{end}}
+          </ul>
+
+          <!-- Brand -->
+          <a
+            class="navbar-brand d-none d-lg-block px-lg-6"
+            href="{{.Site.Params.logo_link}}"
+            >Neta Grill</a
+          >
+
+          <!-- Navigation -->
+          <ul class="navbar-nav justify-content-start w-100">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="accountDropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Our Locations
+              </a>
+              <div class="dropdown-positioner">
+                <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+                  <li class="dropdown-item">
+                    <a
+                      class="dropdown-link"
+                      href="/the-crystal-rb"
+                      role="button"
+                    >
+                      The Crystal SB Ratchapruek
+                    </a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a
+                      class="dropdown-link"
+                      href="/sign-in-cover.html"
+                      role="button"
+                    >
+                      Market Village Suvarnabhumi
+                    </a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a
+                      class="dropdown-link"
+                      href="/sign-in-cover.html"
+                      role="button"
+                    >
+                      Market Village Rangsit
+                    </a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a
+                      class="dropdown-link"
+                      href="/sign-in-cover.html"
+                      role="button"
+                    >
+                      Thonburi Market Place
+                    </a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a
+                      class="dropdown-link"
+                      href="/sign-in-cover.html"
+                      role="button"
+                    >
+                      Central Rama 2
+                    </a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a
+                      class="dropdown-link"
+                      href="/sign-in-cover.html"
+                      role="button"
+                    >
+                      The Mall Bangkape
+                    </a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a
+                      class="dropdown-link"
+                      href="/sign-in-cover.html"
+                      role="button"
+                    >
+                      Seacon Square
+                    </a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a
+                      class="dropdown-link"
+                      href="/sign-in-cover.html"
+                      role="button"
+                    >
+                      Neta Omakase
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <div class="nav-link">
+                <form class="ms-auto me-n3">
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input family-switch"
+                      type="checkbox"
+                      id="familySwitch"
+                      href="#"
+                    />
+                    <span> EN/TH </span>
+                    <label class="form-check-label" for="familySwitch"></label>
+                  </div>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main">
+      {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+      {{ end }}
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    {{ partial "footer"}}
+    <!-- End Footer -->
+  </body>
+</html>

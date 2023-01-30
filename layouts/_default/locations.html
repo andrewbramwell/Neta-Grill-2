@@ -1,0 +1,937 @@
+{{define "main"}}
+
+
+
+
+    <!-- WELCOME -->
+    {{with .Params.hero}}
+    <section
+      data-jarallax
+      data-speed=".8"
+      class="bg-cover jarallax"
+      style="background-image: url({{.background_image}})"
+    >
+      <div class="py-13 py-md-15 bg-dark-50">
+        <div class="container-lg">
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8 text-center text-white">
+              <!-- Preheading -->
+              <h6 class="text-uppercase mb-5">{{.preheading}}</h6>
+
+              <!-- Heading -->
+              <h1 class="display-3 mb-4">{{.heading}}</h1>
+
+              <!-- Text -->
+              <p class="fs-lg">
+                {{.text}}
+              </p><br><br>
+
+
+              <a class="btn btn-danger" href="{{.button_link}}"> {{.button_text}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{end}}
+
+    <!-- SHAPE -->
+
+
+
+    <br><br>
+
+
+    <!-- PRICING -->
+    <section class="pt-8 pt-md-9">
+      <div class="container-lg">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-5">
+            <!-- Slider -->
+            <div class="position-relative mb-md-0 d-none d-md-block">
+              <!-- Decoration -->
+              <div
+                class="position-absolute top-center top-md-start text-danger mt-n8 ms-md-n8"
+              >
+                <svg
+                  width="278"
+                  height="278"
+                  viewBox="0 0 278 278"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path fill="currentColor" d="M3 0h2v8H3z" />
+                  <path fill="currentColor" d="M0 3h8v2H0zM33 0h2v8h-2z" />
+                  <path fill="currentColor" d="M30 3h8v2h-8zM63 0h2v8h-2z" />
+                  <path fill="currentColor" d="M60 3h8v2h-8zM93 0h2v8h-2z" />
+                  <path fill="currentColor" d="M90 3h8v2h-8zM123 0h2v8h-2z" />
+                  <path fill="currentColor" d="M120 3h8v2h-8zM153 0h2v8h-2z" />
+                  <path fill="currentColor" d="M150 3h8v2h-8zM183 0h2v8h-2z" />
+                  <path fill="currentColor" d="M180 3h8v2h-8zM213 0h2v8h-2z" />
+                  <path fill="currentColor" d="M210 3h8v2h-8zM243 0h2v8h-2z" />
+                  <path fill="currentColor" d="M240 3h8v2h-8zM273 0h2v8h-2z" />
+                  <path fill="currentColor" d="M270 3h8v2h-8zM3 30h2v8H3z" />
+                  <path fill="currentColor" d="M0 33h8v2H0zM33 30h2v8h-2z" />
+                  <path fill="currentColor" d="M30 33h8v2h-8zM63 30h2v8h-2z" />
+                  <path fill="currentColor" d="M60 33h8v2h-8zM93 30h2v8h-2z" />
+                  <path fill="currentColor" d="M90 33h8v2h-8zM123 30h2v8h-2z" />
+                  <path
+                    fill="currentColor"
+                    d="M120 33h8v2h-8zM153 30h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M150 33h8v2h-8zM183 30h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M180 33h8v2h-8zM213 30h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M210 33h8v2h-8zM243 30h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M240 33h8v2h-8zM273 30h2v8h-2z"
+                  />
+                  <path fill="currentColor" d="M270 33h8v2h-8zM3 60h2v8H3z" />
+                  <path fill="currentColor" d="M0 63h8v2H0zM33 60h2v8h-2z" />
+                  <path fill="currentColor" d="M30 63h8v2h-8zM63 60h2v8h-2z" />
+                  <path fill="currentColor" d="M60 63h8v2h-8zM93 60h2v8h-2z" />
+                  <path fill="currentColor" d="M90 63h8v2h-8zM123 60h2v8h-2z" />
+                  <path
+                    fill="currentColor"
+                    d="M120 63h8v2h-8zM153 60h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M150 63h8v2h-8zM183 60h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M180 63h8v2h-8zM213 60h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M210 63h8v2h-8zM243 60h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M240 63h8v2h-8zM273 60h2v8h-2z"
+                  />
+                  <path fill="currentColor" d="M270 63h8v2h-8zM3 90h2v8H3z" />
+                  <path fill="currentColor" d="M0 93h8v2H0zM33 90h2v8h-2z" />
+                  <path fill="currentColor" d="M30 93h8v2h-8zM63 90h2v8h-2z" />
+                  <path fill="currentColor" d="M60 93h8v2h-8zM93 90h2v8h-2z" />
+                  <path fill="currentColor" d="M90 93h8v2h-8zM123 90h2v8h-2z" />
+                  <path
+                    fill="currentColor"
+                    d="M120 93h8v2h-8zM153 90h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M150 93h8v2h-8zM183 90h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M180 93h8v2h-8zM213 90h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M210 93h8v2h-8zM243 90h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M240 93h8v2h-8zM273 90h2v8h-2z"
+                  />
+                  <path fill="currentColor" d="M270 93h8v2h-8zM3 120h2v8H3z" />
+                  <path fill="currentColor" d="M0 123h8v2H0zM33 120h2v8h-2z" />
+                  <path
+                    fill="currentColor"
+                    d="M30 123h8v2h-8zM63 120h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M60 123h8v2h-8zM93 120h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M90 123h8v2h-8zM123 120h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M120 123h8v2h-8zM153 120h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M150 123h8v2h-8zM183 120h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M180 123h8v2h-8zM213 120h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M210 123h8v2h-8zM243 120h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M240 123h8v2h-8zM273 120h2v8h-2z"
+                  />
+                  <path fill="currentColor" d="M270 123h8v2h-8zM3 150h2v8H3z" />
+                  <path fill="currentColor" d="M0 153h8v2H0zM33 150h2v8h-2z" />
+                  <path
+                    fill="currentColor"
+                    d="M30 153h8v2h-8zM63 150h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M60 153h8v2h-8zM93 150h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M90 153h8v2h-8zM123 150h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M120 153h8v2h-8zM153 150h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M150 153h8v2h-8zM183 150h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M180 153h8v2h-8zM213 150h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M210 153h8v2h-8zM243 150h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M240 153h8v2h-8zM273 150h2v8h-2z"
+                  />
+                  <path fill="currentColor" d="M270 153h8v2h-8zM3 180h2v8H3z" />
+                  <path fill="currentColor" d="M0 183h8v2H0zM33 180h2v8h-2z" />
+                  <path
+                    fill="currentColor"
+                    d="M30 183h8v2h-8zM63 180h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M60 183h8v2h-8zM93 180h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M90 183h8v2h-8zM123 180h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M120 183h8v2h-8zM153 180h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M150 183h8v2h-8zM183 180h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M180 183h8v2h-8zM213 180h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M210 183h8v2h-8zM243 180h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M240 183h8v2h-8zM273 180h2v8h-2z"
+                  />
+                  <path fill="currentColor" d="M270 183h8v2h-8zM3 210h2v8H3z" />
+                  <path fill="currentColor" d="M0 213h8v2H0zM33 210h2v8h-2z" />
+                  <path
+                    fill="currentColor"
+                    d="M30 213h8v2h-8zM63 210h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M60 213h8v2h-8zM93 210h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M90 213h8v2h-8zM123 210h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M120 213h8v2h-8zM153 210h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M150 213h8v2h-8zM183 210h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M180 213h8v2h-8zM213 210h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M210 213h8v2h-8zM243 210h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M240 213h8v2h-8zM273 210h2v8h-2z"
+                  />
+                  <path fill="currentColor" d="M270 213h8v2h-8zM3 240h2v8H3z" />
+                  <path fill="currentColor" d="M0 243h8v2H0zM33 240h2v8h-2z" />
+                  <path
+                    fill="currentColor"
+                    d="M30 243h8v2h-8zM63 240h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M60 243h8v2h-8zM93 240h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M90 243h8v2h-8zM123 240h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M120 243h8v2h-8zM153 240h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M150 243h8v2h-8zM183 240h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M180 243h8v2h-8zM213 240h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M210 243h8v2h-8zM243 240h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M240 243h8v2h-8zM273 240h2v8h-2z"
+                  />
+                  <path fill="currentColor" d="M270 243h8v2h-8zM3 270h2v8H3z" />
+                  <path fill="currentColor" d="M0 273h8v2H0zM33 270h2v8h-2z" />
+                  <path
+                    fill="currentColor"
+                    d="M30 273h8v2h-8zM63 270h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M60 273h8v2h-8zM93 270h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M90 273h8v2h-8zM123 270h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M120 273h8v2h-8zM153 270h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M150 273h8v2h-8zM183 270h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M180 273h8v2h-8zM213 270h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M210 273h8v2h-8zM243 270h2v8h-2z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M240 273h8v2h-8zM273 270h2v8h-2z"
+                  />
+                  <path fill="currentColor" d="M270 273h8v2h-8z" />
+                </svg>
+              </div>
+
+              <!-- Slider -->
+              {{with .Params.about}}
+              <div
+                class="bg-white"
+                data-flickity='{"draggable": false, "fade": true, "imagesLoaded": true, "prevNextButtons": false, "pageDots": false}'
+                id="coworkingOptions"
+              >
+                <div class="w-100">
+                  <!-- Image -->
+                  <img
+                    class="img-fluid"
+                    src="{{.image}}"
+                    alt="..."
+                    data-aos="wipe-right"
+                  />
+                </div>
+                <div class="w-100">
+                  <!-- Image -->
+                  <img
+                    class="img-fluid"
+                    src="{{.image}}"
+                    alt="..."
+                  />
+                </div>
+                <div class="w-100">
+                  <!-- Image -->
+                  <img
+                    class="img-fluid"
+                    src="/assets/img/coworking/seat-type-office.jpg"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Shape -->
+            <div class="position-relative">
+              <div class="shape shape-fluid-x shape-top text-white">
+                <div class="shape-img pb-5">
+                  <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+                    <path d="M0 25h25L75 0h25v50H0z" fill="currentColor" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5" data-aos="fade-up">
+            <!-- Heading -->
+
+            <h2 class="display-4 mb-4">
+              {{.heading}}
+            </h2>
+
+            <!-- Text -->
+            <p class="text-muted">
+              {{.text}}
+            </p>
+            {{end}}
+
+            <!-- List group -->
+            {{with .Params.links}}
+            <div class="list-group list-group-flush list-group-hover">
+
+              <a
+                class="list-group-item d-flex align-items-center text-reset text-decoration-none"
+                data-toggle="flickity"
+                data-target="#coworkingOptions"
+                data-slide="0"
+                href="{{.link_1}}"
+              >
+              <div
+                class="img-fluid svg-shim text-pinterest mx-auto"
+                style="max-width: 100px"
+              >
+              <img
+                class="mb-0"
+                src="{{.image_1}}"
+                alt="..."
+              />
+              </div>
+              </a>
+
+              <a
+                class="list-group-item d-flex align-items-center text-reset text-decoration-none"
+                data-toggle="flickity"
+                data-target="#coworkingOptions"
+                data-slide="0"
+                href="{{.link_2}}"
+              >
+              <div
+                class="img-fluid svg-shim text-pinterest mx-auto"
+                style="max-width: 100px"
+              >
+              <img
+                class="mb-0"
+                src="{{.image_2}}"
+                alt="..."
+              />
+              </div>
+              </a>
+
+              <a
+                class="list-group-item d-flex align-items-center text-reset text-decoration-none"
+                data-toggle="flickity"
+                data-target="#coworkingOptions"
+                data-slide="0"
+                href="{{.link_3}}"
+              >
+              <div
+                class="img-fluid svg-shim text-pinterest mx-auto"
+                style="max-width: 100px"
+              >
+              <img
+                class="mb-0"
+                src="{{.image_3}}"
+                alt="..."
+              />
+              </div>
+              </a>
+
+              <a
+                class="list-group-item d-flex align-items-center text-reset text-decoration-none"
+                data-toggle="flickity"
+                data-target="#coworkingOptions"
+                data-slide="0"
+                href="{{.link_4}}"
+              >
+              <div
+                class="img-fluid svg-shim text-pinterest mx-auto"
+                style="max-width: 100px"
+              >
+              <img
+                class="mb-0"
+                src="{{.image_4}}"
+                alt="..."
+              />
+              </div>
+              </a>
+
+              <a
+                class="list-group-item d-flex align-items-center text-reset text-decoration-none"
+                data-toggle="flickity"
+                data-target="#coworkingOptions"
+                data-slide="0"
+                href="{{.link_5}}"
+              >
+              <div
+                class="img-fluid svg-shim text-pinterest mx-auto"
+                style="max-width: 100px"
+              >
+              <img
+                class="mb-0"
+                src="{{.image_5}}"
+                alt="..."
+              />
+              </div>
+              </a>
+            </div>
+            {{end}}
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- LOCATIONS -->
+    {{with .Params.locations}}
+    <section class="pt-12 pt-md-14 pb-10 pb-md-8">
+      <div class="container-lg">
+        <div class="row align-items-center justify-content-betwen mb-9">
+          <div class="col-md-5 text-center text-md-start">
+            <!-- Heading -->
+            <h2 class="display-4 text-black mb-4 mb-md-0">
+              {{.heading}}
+            </h2>
+          </div>
+          <div class="col-md-6 text-center text-md-start">
+            <!-- Text -->
+            <p class="text-black mb-0">
+              {{.text}}
+            </p>
+            {{end}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <!-- Slider -->
+            <div
+              class="flickity-viewport-visible mx-n4"
+              data-flickity='{"cellAlign": "left", "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "contain": true}'
+            >
+              <div class="col-12 px-4" style="max-width: 300px">
+
+
+
+                <!-- Card -->
+                {{with .Params.location_1}}
+                <div class="card card-sm rounded-top-start rounded-bottom-end lift">
+                  <!-- Image  -->
+                  <img
+                    class="card-img rounded-top-start"
+                    src="{{.image}}"
+                    alt="..."
+                    href="#!"
+                  />
+                  <!-- SHAPE -->
+                  <div class="position-relative">
+                    <div class="shape shape-fluid-x shape-top text-white">
+                      <div class="shape-img pb-4">
+                        <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+                          <path
+                            d="M0 25h25L75 0h25v50H0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <h4 class = text-dark> {{.branch_name}} </h4><br>
+                    <!-- Text -->
+                    <small>
+                      <p class="fs-sm mb-4"><span class = text-danger>TEL:</span><span class = text-dark>&nbsp&nbsp{{.tel}}</p>
+                      <p class="fs-sm mb-4"><span class = text-danger>{{.days}}:</span><span class = text-dark>&nbsp&nbsp{{.hours}}</p>
+                    </small>
+                    <a class="ms-auto stretched-link" href="{{.link}}">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 px-4" style="max-width: 300px">
+                {{end}}
+
+                <!-- Card -->
+                {{with .Params.location_2}}
+                <div class="card card-sm rounded-top-start rounded-bottom-end lift">
+                  <!-- Image  -->
+                  <img
+                    class="card-img rounded-top-start"
+                    src="{{.image}}"
+                    alt="..."
+                    href="#!"
+                  />
+                  <!-- SHAPE -->
+                  <div class="position-relative">
+                    <div class="shape shape-fluid-x shape-top text-white">
+                      <div class="shape-img pb-4">
+                        <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+                          <path
+                            d="M0 25h25L75 0h25v50H0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <h4 class = text-dark> {{.branch_name}} </h4><br>
+                    <!-- Text -->
+                    <small>
+                      <p class="fs-sm mb-4"><span class = text-danger>TEL:</span><span class = text-dark>&nbsp&nbsp{{.tel}}</p>
+                      <p class="fs-sm mb-4"><span class = text-danger>{{.days}}:</span><span class = text-dark>&nbsp&nbsp{{.hours}}</p>
+                    </small>
+                    <a class="ms-auto stretched-link" href="{{.link}}">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 px-4" style="max-width: 300px">
+                {{end}}
+
+
+                <!-- Card -->
+                {{with .Params.location_3}}
+                <div class="card card-sm rounded-top-start rounded-bottom-end lift">
+                  <!-- Image  -->
+                  <img
+                    class="card-img rounded-top-start"
+                    src="{{.image}}"
+                    alt="..."
+                    href="#!"
+                  />
+                  <!-- SHAPE -->
+                  <div class="position-relative">
+                    <div class="shape shape-fluid-x shape-top text-white">
+                      <div class="shape-img pb-4">
+                        <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+                          <path
+                            d="M0 25h25L75 0h25v50H0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <h4 class = text-dark> {{.branch_name}} </h4><br>
+                    <!-- Text -->
+                    <small>
+                      <p class="fs-sm mb-4"><span class = text-danger>TEL:</span><span class = text-dark>&nbsp&nbsp{{.tel}}</p>
+                      <p class="fs-sm mb-4"><span class = text-danger>{{.days}}:</span><span class = text-dark>&nbsp&nbsp{{.hours}}</p>
+                    </small>
+                    <a class="ms-auto stretched-link" href="{{.link}}">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 px-4" style="max-width: 300px">
+                {{end}}
+
+
+                <!-- Card -->
+                {{with .Params.location_4}}
+                <div class="card card-sm rounded-top-start rounded-bottom-end lift">
+                  <!-- Image  -->
+                  <img
+                    class="card-img rounded-top-start"
+                    src="{{.image}}"
+                    alt="..."
+                    href="#!"
+                  />
+                  <!-- SHAPE -->
+                  <div class="position-relative">
+                    <div class="shape shape-fluid-x shape-top text-white">
+                      <div class="shape-img pb-4">
+                        <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+                          <path
+                            d="M0 25h25L75 0h25v50H0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <h4 class = text-dark> {{.branch_name}} </h4><br>
+                    <!-- Text -->
+                    <small>
+                      <p class="fs-sm mb-4"><span class = text-danger>TEL:</span><span class = text-dark>&nbsp&nbsp{{.tel}}</p>
+                      <p class="fs-sm mb-4"><span class = text-danger>{{.days}}:</span><span class = text-dark>&nbsp&nbsp{{.hours}}</p>
+                    </small>
+                    <a class="ms-auto stretched-link" href="{{.link}}">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 px-4" style="max-width: 300px">
+                {{end}}
+
+
+                <!-- Card -->
+                {{with .Params.location_5}}
+                <div class="card card-sm rounded-top-start rounded-bottom-end lift">
+                  <!-- Image  -->
+                  <img
+                    class="card-img rounded-top-start"
+                    src="{{.image}}"
+                    alt="..."
+                    href="#!"
+                  />
+                  <!-- SHAPE -->
+                  <div class="position-relative">
+                    <div class="shape shape-fluid-x shape-top text-white">
+                      <div class="shape-img pb-4">
+                        <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+                          <path
+                            d="M0 25h25L75 0h25v50H0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <h4 class = text-dark> {{.branch_name}} </h4><br>
+                    <!-- Text -->
+                    <small>
+                      <p class="fs-sm mb-4"><span class = text-danger>TEL:</span><span class = text-dark>&nbsp&nbsp{{.tel}}</p>
+                      <p class="fs-sm mb-4"><span class = text-danger>{{.days}}:</span><span class = text-dark>&nbsp&nbsp{{.hours}}</p>
+                    </small>
+                    <a class="ms-auto stretched-link" href="{{.link}}">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 px-4" style="max-width: 300px">
+                {{end}}
+
+
+                <!-- Card -->
+                {{with .Params.location_6}}
+                <div class="card card-sm rounded-top-start rounded-bottom-end lift">
+                  <!-- Image  -->
+                  <img
+                    class="card-img rounded-top-start"
+                    src="{{.image}}"
+                    alt="..."
+                    href="#!"
+                  />
+                  <!-- SHAPE -->
+                  <div class="position-relative">
+                    <div class="shape shape-fluid-x shape-top text-white">
+                      <div class="shape-img pb-4">
+                        <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+                          <path
+                            d="M0 25h25L75 0h25v50H0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <h4 class = text-dark> {{.branch_name}} </h4><br>
+                    <!-- Text -->
+                    <small>
+                      <p class="fs-sm mb-4"><span class = text-danger>TEL:</span><span class = text-dark>&nbsp&nbsp{{.tel}}</p>
+                      <p class="fs-sm mb-4"><span class = text-danger>{{.days}}:</span><span class = text-dark>&nbsp&nbsp{{.hours}}</p>
+                    </small>
+                    <a class="ms-auto stretched-link" href="{{.link}}">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 px-4" style="max-width: 300px">
+                {{end}}
+
+                {{with .Params.location_7}}
+                <div class="card card-sm rounded-top-start rounded-bottom-end lift">
+                  <!-- Image  -->
+                  <img
+                    class="card-img rounded-top-start"
+                    src="{{.image}}"
+                    alt="..."
+                    href="#!"
+                  />
+                  <!-- SHAPE -->
+                  <div class="position-relative">
+                    <div class="shape shape-fluid-x shape-top text-white">
+                      <div class="shape-img pb-4">
+                        <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+                          <path
+                            d="M0 25h25L75 0h25v50H0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <h4 class = text-dark> {{.branch_name}} </h4><br>
+                    <!-- Text -->
+                    <small>
+                      <p class="fs-sm mb-4"><span class = text-danger>TEL:</span><span class = text-dark>&nbsp&nbsp{{.tel}}</p>
+                      <p class="fs-sm mb-4"><span class = text-danger>{{.days}}:</span><span class = text-dark>&nbsp&nbsp{{.hours}}</p>
+                    </small>
+                    <a class="ms-auto stretched-link" href="{{.link}}">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 px-4" style="max-width: 300px">
+                {{end}}
+
+
+
+                <!-- Card -->
+                {{with .Params.location_8}}
+                <div
+                  class="card card-sm rounded-top-start rounded-bottom-end lift">
+                  <!-- Image  -->
+                  <img
+                    class="card-img rounded-top-start"
+                    src="{{.image}}"
+                    alt="..."
+                  />
+                  <!-- SHAPE -->
+                  <div class="position-relative">
+                    <div class="shape shape-fluid-x shape-top text-white">
+                      <div class="shape-img pb-4">
+                        <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+                          <path
+                            d="M0 25h25L75 0h25v50H0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <h4 class = text-dark> {{.branch_name}} </h4><br>
+                    <small>
+                      <p class="fs-sm mb-4"><span class = text-danger>TEL:</span><span class = text-dark>&nbsp&nbsp{{.tel}}</p>
+                      <p class="fs-sm mb-4"><span class = text-danger>{{.days}}:</span><span class = text-dark>&nbsp&nbsp{{.hours}}</p>
+                    </small>
+                    <a class="ms-auto stretched-link" href="{{.link}}">
+                      </a>
+                    </div>
+                  </div>
+                  {{end}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+      <br><br>
+
+
+
+
+
+      <!-- CTA -->
+      {{with .Params.cta}}
+      <section class="bg-dark">
+        <div class="container-lg">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <!-- Divider -->
+              <hr class="bg-gray-900 mt-0 mb-8" />
+            </div>
+            <div class="col-md">
+              <!-- Heading -->
+              <h1 class="text-white mb-0">
+                {{.heading}}
+              </h1>
+
+              <!-- Text -->
+              <p class="text-white-60 mb-4 mb-md-0">
+                {{.text}}
+              </p>
+            </div>
+            <div class="col-md-4">
+              <!-- Form -->
+              <form>
+                <input
+                  class="form-control"
+                  type="email"
+                  placeholder="Email address"
+                />
+              </form>
+            </div>
+            <div class="col-12">
+              <!-- Divider -->
+              <hr class="bg-gray-900 mb-0 mt-8" />
+            </div>
+          </div>
+        </div>
+      </section>
+      {{end}}
+
+
+
+{{end}}

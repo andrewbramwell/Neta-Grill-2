@@ -1,0 +1,23 @@
+############################# English ############################
+[en]
+languageName = "En"
+title = "Neta grill 2"
+contentDir = "content/english" # content/english
+weight = 1
+###########  content ##########
+footer_content = "© Food meal Ltd. 2022"
+head_btn = "Order Now"
+head_link = "#"
+logo_link = "/"
+
+#############################   Thai  ############################
+[tha]
+languageName = "tha"
+title = "Neta grill 2"
+contentDir = "content/thai" # content/german
+weight = 2
+###########  content ##########
+footer_content = " © ฟู้ดมีล จำกัด 2022"
+head_btn = "สั่งซื้อตอนนี้"
+head_link = "#"
+logo_link = "/tha"

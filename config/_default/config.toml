@@ -1,0 +1,6 @@
+######################## default configuration ####################
+baseURL = "http://example.org/"
+title = "Neta gril theme"
+
+[markup.goldmark.renderer]
+unsafe = true

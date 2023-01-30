@@ -1,0 +1,106 @@
+{{define "main"}}
+
+<!-- CONTENT -->
+{{with .Params.header}}
+<section class="pt-6 pt-md-6 pb-10 pb-md-12">
+  <div class="container-lg">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 text-center">
+        <!-- Heading -->
+        <h1 class="display-3 mb-4">{{.heading}}</h1>
+
+        <!-- Text -->
+        <p class="fs-lg text-muted mb-9">{{.text}}</p>
+        {{end}}
+
+        <!-- Form -->
+        {{with .Params.form}}
+        <form>
+          <div class="row">
+            <div class="col-md-6">
+              <!-- Name -->
+              <div class="form-group">
+                <label class="visually-hidden" for="contactName">
+                  Your name
+                </label>
+                <input
+                  class="form-control"
+                  id="contactName"
+                  type="text"
+                  placeholder="{{.name}}"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <!-- Email -->
+              <div class="form-group">
+                <label class="visually-hidden" for="contactEmail">
+                  Your email
+                </label>
+                <input
+                  class="form-control"
+                  id="contactEmail"
+                  type="email"
+                  placeholder="{{.email}}"
+                />
+              </div>
+            </div>
+            <div class="col-12">
+              <!-- Message -->
+              <div class="form-group">
+                <label class="visually-hidden" for="contactMessage">
+                  Your message
+                </label>
+                <textarea
+                  class="form-control"
+                  id="contactMessage"
+                  placeholder="{{.message}}"
+                  rows="7"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <button class="btn w-100 btn-danger">{{.button}}</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+
+<br /><br /><br /><br />
+
+<!-- CTA -->
+{{with .Params.cta}}
+<section class="bg-dark">
+  <div class="container-lg">
+    <div class="row align-items-center">
+      <div class="col-12">
+        <!-- Divider -->
+        <hr class="bg-gray-900 mt-0 mb-8" />
+      </div>
+      <div class="col-md">
+        <!-- Heading -->
+        <h1 class="text-white mb-0">{{.heading}}</h1>
+
+        <!-- Text -->
+        <p class="text-white-60 mb-4 mb-md-0">{{.text}}</p>
+      </div>
+      <div class="col-md-4">
+        <!-- Form -->
+        <form>
+          <input
+            class="form-control"
+            type="email"
+            placeholder="Email address"
+          />
+        </form>
+      </div>
+      <div class="col-12">
+        <!-- Divider -->
+        <hr class="bg-gray-900 mb-0 mt-8" />
+      </div>
+    </div>
+  </div>
+</section>
+{{end}} {{end}}
