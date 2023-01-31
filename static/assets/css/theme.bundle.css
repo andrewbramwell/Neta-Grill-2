@@ -82,9 +82,8 @@
   --bs-black-rgb: 27, 22, 66;
   --bs-body-color-rgb: 27, 22, 66;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "lineFont", sans-serif;
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "lineFont",
-    "lineFont", monospace;
+  --bs-font-sans-serif: "lineFont";
+  --bs-font-monospace: "lineFont";
   --bs-gradient: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.15),
@@ -4416,6 +4415,7 @@ fieldset:disabled .btn {
 }
 .nav-link {
   color: #6658ea;
+  font-weight: 500;
   display: block;
   padding: 0.5rem 1rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
@@ -8973,7 +8973,7 @@ fieldset:disabled .btn {
   font-family: DM Sans, sans-serif !important;
 }
 .font-serif {
-  font-family: "DM Serif Display", serif !important;
+  font-family: "lineFont";
 }
 .fs-xxs {
   font-size: 0.75rem !important;
@@ -19470,7 +19470,8 @@ a.badge.bg-primary-light-soft:hover {
   width: 100%;
 }
 .navbar-brand {
-  font-family: "DM Serif Display", serif;
+  font-family: "lineFont";
+  font-weight: 500;
 }
 .navbar-toggler {
   padding-left: 0;
@@ -20453,7 +20454,7 @@ a.text-white-60:hover {
   border-radius: 50%;
   content: counter(timeline-counter);
   display: flex;
-  font-family: "DM Serif Display", serif;
+  font-family: "lineFont";
   font-size: 2.25rem;
   height: 4rem;
   justify-content: center;

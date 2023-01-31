@@ -15,13 +15,13 @@ weight = 2
 [[mainl]]
 identifier = "location"
 name = "Our Locations"
-url = "#"
+url = "/the-crystal-rb"
 weight = 1
 
 [[mainl]]
 identifier = "location1"
 name = "Location 1"
-url = "/"
+url = "/the-crystal-rb"
 parent = "location"
 weight = 1
 

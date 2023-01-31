@@ -76,74 +76,62 @@
             </ul>
           </div>
         </li>
-        {{- else}}
-        <li class="nav-item">
-          <a class="nav-link" href="{{ .URL | absLangURL }}" role="button">
-            {{.Name}}
-          </a>
-        </li>
+
         {{- end}}
         <!---->
         {{- end}}
 
         <li class="nav-item">
-          <div class="nav-link">
-            <form class="ms-auto me-n3">
-              <div class="form-check form-switch">
-                <span>
-                  <!-- Language List -->
-                  {{ if .IsTranslated }}
-                  <select
-                    class="m-2 border-0"
-                    id="select-language"
-                    onchange="location = this.value;"
-                  >
-                    {{ $siteLanguages := site.Languages}}
+          <span>
+            <!-- Language List -->
+            {{ if .IsTranslated }}
+            <select
+              class="m-2 border-0"
+              id="select-language"
+              onchange="location = this.value;"
+            >
+              {{ $siteLanguages := site.Languages}}
 
-                    <!---->
+              <!---->
 
-                    {{ $pageLang := .Page.Lang}}
-                    <!---->
-                    {{ range .Page.AllTranslations }}
-                    <!---->
-                    {{ $translation := .}}
-                    <!---->
-                    {{ range $siteLanguages }}
-                    <!---->
-                    {{ if eq $translation.Lang .Lang }}
-                    <!---->
-                    {{ $selected := false }}
-                    <!---->
-                    {{ if eq $pageLang .Lang}}
-                    <option
-                      id="{{ $translation.Language }}"
-                      value="{{ $translation.Permalink }}"
-                      selected
-                    >
-                      {{ .LanguageName }}
-                    </option>
-                    {{ else }}
-                    <option
-                      id="{{ $translation.Language }}"
-                      value="{{ $translation.Permalink }}"
-                    >
-                      {{ .LanguageName }}
-                    </option>
-                    {{ end }}
+              {{ $pageLang := .Page.Lang}}
+              <!---->
+              {{ range .Page.AllTranslations }}
+              <!---->
+              {{ $translation := .}}
+              <!---->
+              {{ range $siteLanguages }}
+              <!---->
+              {{ if eq $translation.Lang .Lang }}
+              <!---->
+              {{ $selected := false }}
+              <!---->
+              {{ if eq $pageLang .Lang}}
+              <option
+                id="{{ $translation.Language }}"
+                value="{{ $translation.Permalink }}"
+                selected
+              >
+                {{ .LanguageName }}
+              </option>
+              {{ else }}
+              <option
+                id="{{ $translation.Language }}"
+                value="{{ $translation.Permalink }}"
+              >
+                {{ .LanguageName }}
+              </option>
+              {{ end }}
 
-                    <!---->
-                    {{ end }}
-                    <!---->
-                    {{ end }}
-                    <!---->
-                    {{ end }}
-                  </select>
-                  {{ end }}</span
-                >
-                <label class="form-check-label" for="familySwitch"></label>
-              </div>
-            </form>
-          </div>
+              <!---->
+              {{ end }}
+              <!---->
+              {{ end }}
+              <!---->
+              {{ end }}
+            </select>
+            {{ end }}</span
+          >
         </li>
       </ul>
     </div>
@@ -1236,15 +1224,16 @@
         <!-- Text -->
         <p class="text-white-60 mb-4 mb-md-0">{{.text}}</p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 d-flex form">
         <!-- Form -->
-        <form>
+        <form id="form">
           <input
             class="form-control"
             type="email"
             placeholder="Email address"
           />
         </form>
+        <button type="submit" form="form1" value="Submit">Submit</button>
       </div>
       <div class="col-12">
         <!-- Divider -->

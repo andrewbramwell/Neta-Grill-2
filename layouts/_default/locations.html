@@ -828,15 +828,16 @@
         <!-- Text -->
         <p class="text-white-60 mb-4 mb-md-0">{{.text}}</p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 d-flex form">
         <!-- Form -->
-        <form>
+        <form id="form">
           <input
             class="form-control"
             type="email"
             placeholder="Email address"
           />
         </form>
+        <button type="submit" form="form1" value="Submit">Submit</button>
       </div>
       <div class="col-12">
         <!-- Divider -->

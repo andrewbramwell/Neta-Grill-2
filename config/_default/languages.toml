@@ -1,6 +1,6 @@
 ############################# English ############################
 [en]
-languageName = "En"
+languageName = "EN"
 title = "Neta grill 2"
 contentDir = "content/english" # content/english
 weight = 1
@@ -12,7 +12,7 @@ logo_link = "/"
 
 #############################   Thai  ############################
 [tha]
-languageName = "tha"
+languageName = "TH"
 title = "Neta grill 2"
 contentDir = "content/thai" # content/german
 weight = 2
