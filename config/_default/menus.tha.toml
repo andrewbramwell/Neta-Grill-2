@@ -1,10 +1,40 @@
-# main menu
-[[main]]
+# left main menu
+[[mainr]]
 name = "Our Menu"
 url = "https://drive.google.com/file/d/1VyfLKDYCFifqqeN8b2b1Bu2ROrEh0MH9/view"
 weight = 1
 
-[[main]]
+[[mainr]]
 name = "Contact us"
 url = "/contact"
 weight = 2
+
+
+# right main menu
+
+[[mainl]]
+identifier = "location"
+name = "Our Locations"
+url = "#"
+weight = 1
+
+[[mainl]]
+identifier = "location1"
+name = "Location 1"
+url = "/"
+parent = "location"
+weight = 1
+
+[[mainl]]
+identifier = "location2"
+name = "Location 2"
+url = "/"
+parent = "location"
+weight = 2
+
+[[mainl]]
+identifier = "location3"
+name = "Location 3"
+url = "/"
+parent = "location"
+weight = 3

@@ -1,5 +1,156 @@
 {{define "main"}}
 
+<!--Navigattion bar-->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-lg">
+    <!-- Brand -->
+    <a class="navbar-brand d-lg-none" href="{{.Site.Params.logo_link}}"
+      >Neta Grill</a
+    >
+
+    <!-- Toggler -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapse -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navigation -->
+      <ul class="navbar-nav justify-content-end w-100">
+        {{ range .Site.Menus.mainr }}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ .URL | absLangURL }}" role="button">
+            {{.Name}}
+          </a>
+        </li>
+        {{end}}
+      </ul>
+
+      <!-- Brand -->
+      <a
+        class="navbar-brand d-none d-lg-block px-lg-6"
+        href="{{.Site.Params.logo_link}}"
+        >Neta Grill</a
+      >
+
+      <!-- Navigation -->
+      <ul class="navbar-nav justify-content-start w-100">
+        {{- $currentNode := . }}
+        <!---->
+
+        {{ range .Site.Menus.mainl }}
+        <!---->
+        {{- if .HasChildren }}
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            id="accountDropdown"
+            href="{{ .URL | absLangURL }}"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            {{ .Name }}
+          </a>
+          <div class="dropdown-positioner">
+            <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+              {{ range .Children }}
+              <li class="dropdown-item">
+                <a
+                  class="dropdown-link"
+                  href="{{ .URL | absLangURL }}"
+                  role="button"
+                >
+                  {{.Name}}
+                </a>
+              </li>
+              {{- end}}
+            </ul>
+          </div>
+        </li>
+        {{- else}}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ .URL | absLangURL }}" role="button">
+            {{.Name}}
+          </a>
+        </li>
+        {{- end}}
+        <!---->
+        {{- end}}
+
+        <li class="nav-item">
+          <div class="nav-link">
+            <form class="ms-auto me-n3">
+              <div class="form-check form-switch">
+                <span>
+                  <!-- Language List -->
+                  {{ if .IsTranslated }}
+                  <select
+                    class="m-2 border-0"
+                    id="select-language"
+                    onchange="location = this.value;"
+                  >
+                    {{ $siteLanguages := site.Languages}}
+
+                    <!---->
+
+                    {{ $pageLang := .Page.Lang}}
+                    <!---->
+                    {{ range .Page.AllTranslations }}
+                    <!---->
+                    {{ $translation := .}}
+                    <!---->
+                    {{ range $siteLanguages }}
+                    <!---->
+                    {{ if eq $translation.Lang .Lang }}
+                    <!---->
+                    {{ $selected := false }}
+                    <!---->
+                    {{ if eq $pageLang .Lang}}
+                    <option
+                      id="{{ $translation.Language }}"
+                      value="{{ $translation.Permalink }}"
+                      selected
+                    >
+                      {{ .LanguageName }}
+                    </option>
+                    {{ else }}
+                    <option
+                      id="{{ $translation.Language }}"
+                      value="{{ $translation.Permalink }}"
+                    >
+                      {{ .LanguageName }}
+                    </option>
+                    {{ end }}
+
+                    <!---->
+                    {{ end }}
+                    <!---->
+                    {{ end }}
+                    <!---->
+                    {{ end }}
+                  </select>
+                  {{ end }}</span
+                >
+                <label class="form-check-label" for="familySwitch"></label>
+              </div>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- end navigation -->
+<br /><br />
 <!-- CONTENT -->
 {{with .Params.header}}
 <section class="pt-6 pt-md-6 pb-10 pb-md-12">
@@ -86,15 +237,16 @@
         <!-- Text -->
         <p class="text-white-60 mb-4 mb-md-0">{{.text}}</p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 d-flex form">
         <!-- Form -->
-        <form>
+        <form id="form">
           <input
             class="form-control"
             type="email"
             placeholder="Email address"
           />
         </form>
+        <button type="submit" form="form1" value="Submit">Submit</button>
       </div>
       <div class="col-12">
         <!-- Divider -->
@@ -103,4 +255,6 @@
     </div>
   </div>
 </section>
-{{end}} {{end}}
+{{end}}
+<!---->
+{{end}}

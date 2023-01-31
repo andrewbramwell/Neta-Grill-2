@@ -1,6 +1,6 @@
 ---
 layout: locations
-
+title: Locations
 hero:
   preheading: "Premium"
   heading: "Neta Grill The Crystal SB Ratchapruek "

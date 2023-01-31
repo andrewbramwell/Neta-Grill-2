@@ -46,174 +46,39 @@
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="/assets/css/theme.bundle.css" />
+    <style>
+      .form {
+        padding: 0px;
+        margin: 0px;
+        align-items: center;
+      }
+      .form button {
+        border-radius: 0 0.5rem 0.5rem 0;
+        background-color: #f3f8ff;
+        color: #1b1642;
+        transition: all 0.3s ease;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.6;
+        padding: 0.75rem 1.25rem;
+        margin: 0px;
+      }
+      .form button:hover {
+        background-color: #f3f8ff;
+      }
+      #form input {
+        border-radius: 0.5rem 0 0 0.5rem;
+      }
+    </style>
   </head>
 
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-togglable fixed-top">
-      <div class="container-lg">
-        <!-- Brand -->
-        <a class="navbar-brand d-lg-none" href="{{.Site.Params.logo_link}}"
-          >Neta Grill</a
-        >
 
-        <!-- Toggler -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    {{ block "main" . }}
+    <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
 
-        <!-- Collapse -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Navigation -->
-          <ul class="navbar-nav justify-content-end w-100">
-            {{ range .Site.Menus.mainr }}
-            <li class="nav-item">
-              <a class="nav-link" href="{{ .URL | absLangURL }}" role="button">
-                {{.Name}}
-              </a>
-            </li>
-            {{end}}
-          </ul>
-
-          <!-- Brand -->
-          <a
-            class="navbar-brand d-none d-lg-block px-lg-6"
-            href="{{.Site.Params.logo_link}}"
-            >Neta Grill</a
-          >
-
-          <!-- Navigation -->
-          <ul class="navbar-nav justify-content-start w-100">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                id="accountDropdown"
-                href="#"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Our Locations
-              </a>
-              <div class="dropdown-positioner">
-                <ul class="dropdown-menu" aria-labelledby="accountDropdown">
-                  <li class="dropdown-item">
-                    <a
-                      class="dropdown-link"
-                      href="/the-crystal-rb"
-                      role="button"
-                    >
-                      The Crystal SB Ratchapruek
-                    </a>
-                  </li>
-
-                  <li class="dropdown-item">
-                    <a
-                      class="dropdown-link"
-                      href="/sign-in-cover.html"
-                      role="button"
-                    >
-                      Market Village Suvarnabhumi
-                    </a>
-                  </li>
-
-                  <li class="dropdown-item">
-                    <a
-                      class="dropdown-link"
-                      href="/sign-in-cover.html"
-                      role="button"
-                    >
-                      Market Village Rangsit
-                    </a>
-                  </li>
-
-                  <li class="dropdown-item">
-                    <a
-                      class="dropdown-link"
-                      href="/sign-in-cover.html"
-                      role="button"
-                    >
-                      Thonburi Market Place
-                    </a>
-                  </li>
-
-                  <li class="dropdown-item">
-                    <a
-                      class="dropdown-link"
-                      href="/sign-in-cover.html"
-                      role="button"
-                    >
-                      Central Rama 2
-                    </a>
-                  </li>
-
-                  <li class="dropdown-item">
-                    <a
-                      class="dropdown-link"
-                      href="/sign-in-cover.html"
-                      role="button"
-                    >
-                      The Mall Bangkape
-                    </a>
-                  </li>
-
-                  <li class="dropdown-item">
-                    <a
-                      class="dropdown-link"
-                      href="/sign-in-cover.html"
-                      role="button"
-                    >
-                      Seacon Square
-                    </a>
-                  </li>
-
-                  <li class="dropdown-item">
-                    <a
-                      class="dropdown-link"
-                      href="/sign-in-cover.html"
-                      role="button"
-                    >
-                      Neta Omakase
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="nav-item">
-              <div class="nav-link">
-                <form class="ms-auto me-n3">
-                  <div class="form-check form-switch">
-                    <input
-                      class="form-check-input family-switch"
-                      type="checkbox"
-                      id="familySwitch"
-                      href="#"
-                    />
-                    <span> EN/TH </span>
-                    <label class="form-check-label" for="familySwitch"></label>
-                  </div>
-                </form>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <main id="main">
-      {{ block "main" . }}
-      <!-- The part of the page that begins to differ between templates -->
-      {{ end }}
-    </main>
     <!-- End #main -->
 
     <!-- ======= Footer ======= -->

@@ -1,5 +1,6 @@
 ---
 layout: home
+title: Home Page
 
 hero:
   preheading: "Premium"

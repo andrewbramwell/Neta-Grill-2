@@ -1,6 +1,6 @@
 ---
 layout: contact
-
+title: Contact us
 header:
   heading: How Can We Help
   text: Fill in the form below and we will be in touch!
