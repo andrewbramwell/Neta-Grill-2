@@ -20,8 +20,8 @@ weight = 1
 
 [[mainl]]
 identifier = "location1"
-name = "Location 1"
-url = "/"
+name = "The Crystal"
+url = "/the-crystal-rb"
 parent = "location"
 weight = 1
 
