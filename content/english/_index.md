@@ -55,20 +55,6 @@ menu_card_4:
   link: https://netagrill.enjovia.com/buffet/evoucher-neta-grill-premium-buffet-899
   image: /assets/img/home/card-1.jpg
 
-menu_card_5:
-  title: "Premium Buffet Set 1299+"
-  text: "All-you-can-eat menu in Set 1299+(1429 baht) All-you-can-eat menu Greenland Snow Fish Hokkaido Scallop Spicy Pickled Peony Prawns Special selection of meat set Wagyu Jumbo Beef Special Selected Tenderloin Special rib eye, topped with niku sauce, Eel Sushi Premium Wagyu Roll."
-  button: "Buy e-voucher"
-  link: https://netagrill.enjovia.com/buffet/evoucher-neta-grill-premium-buffet-set-1299-1429-
-  image: /assets/img/home/card-1.jpg
-
-menu_card_6:
-  title: "Premium Buffet Set 1599+"
-  text: "Meat imported from Hokkaido Kuroge A4 Wagyu, sea urchin sushi, Otoro sushi, Omakase sashimi set and River Prawn, Sea Crab, Blue Crab, Crayfish, Japanese Oyster, Eel Sushi, Salmon Roe Sushi, Scallop Sushi."
-  button: "Buy e-voucher"
-  link: https://netagrill.enjovia.com/buffet/evoucher-netagrill-premium-buffet-set-1599-1759
-  image: /assets/img/home/card-1.jpg
-
 delivery:
   heading: "Delivery partners"
   partner_1: /assets/img/home/delivery/grab.png
