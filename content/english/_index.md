@@ -96,10 +96,10 @@ delivery_card_5:
 
 locations:
   heading: "Neta Grill Locations"
-  text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam."
+  text: "Discover the best of Japanese cuisine at one of our eight convenient locations in Bangkok"
 
 location_1:
-  branch_name: Neta​ Grill​ The Crystal SB Ratchapruek
+  branch_name: Neta Grill The Crystal SB Ratchapruek
   tel: 02-102-5660
   days: MON-SUN
   hours: 11am-10pm
