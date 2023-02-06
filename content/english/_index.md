@@ -14,8 +14,11 @@ logo:
   image: /assets/img/home/logo-3.png
 
 about:
-  heading: "Bangkok's best buffet"
-  text: "วันนี้ผมได้รับการรับเชิญจาก PR ของร้าน Neta Grill ให้เข้ามารีวิวบุฟเฟ่ต์ปิ้งย่างยากินิคุ/ซีฟู๊ดและซูชิระดับพรีเมี่ยมของที่ร้านราคาเริ่มต้นคนละ 499++ โดยวันนี้เรามารีวิวกันที่สาขา Mega Bangna เพราะว่าเป็นสาขาแรกที่ทางร้านได้ทำการเปลี่ยน Supplier ใหม่ทั้งหมด เนื่องจากมีกระแสบุฟเฟ่ต์ของทางร้านในด้านลบมาอย่างยาวนาน "
+  heading: 
+  text: "Welcome to Neta Grill Restaurant, where Yakiniku meets Hamayaki! The perfect combination of premium Japanese imported meats and seafood. Experience melt in the mouth wagyu and fresh lobster cooked to perfection on our charcoal-grills. 
+
+Savor the flavors of Japan with one of our all-you-can-eat buffet sets starting at 499+. With 100 menu items to choose from, there is something for everyone at Neta Grill. Come and experience authentic Japanese cuisine at its finest.
+ "
   image_1: /assets/img/home/banner.jpg
   image_2: /assets/img/home/image-2.jpg
   image_3: /assets/img/home/image-3.jpg
