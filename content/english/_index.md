@@ -28,31 +28,30 @@ menu_item:
   text: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
 
 menu_card_1:
-  title: "Premium Buffet Set 399+"
-  text: "All you can eat with pork set menu, pork belly, pork neck marinated in miso sauce Marinated Pork with Korean Sauce Bacon Wrapped Golden Needle Mushroom Sweet Egg Sashimi Truffle poached eggs, garlic rice, tomato sauce fries, fried neta chicken, fried salmon skins, mixed vegetable set."
+  title: "Hamayaki Set 498+"
+  text: "An all-you-can-eat buffet with a variety of Japanese dishes, including grilled scallops, salmon sushi, tamago sashimi, and more. Soft drink refills included."
   button: "Buy e-voucher"
-  link: https://netagrill.enjovia.com/buffet/evoucher-neta-grill-premium-buffet-set-499-636-
+  link: https://netagrill.enjovia.com/buffet/evoucher-neta-grill-buffet-set-498-662
   image: /assets/img/home/card-1.jpg
 
 menu_card_2:
-  title: "Premium Buffet Set 499+"
-  text: "All-you-can-eat with Neta pork set menu, pork belly, pork neck, topped with Mala Sod, Bacon, Aussie beef, golden needle mushroom, or beef. Grilled Fresh Salmon, Cheese Prawns, Squid Pierced, Salmon Garlic Fried Rice, Jumog Babs, Potato Chips with Cheese Sauce Crispy Neta Chicken Wings Spicy Drunken Spaghetti with Bacon Salmon Sushi, Cheese Shrimp Sushi, Bacon Sushi Australian Beef Sushi"
+  title: "Hamayaki Set 698+"
+  text: "An expanded all-you-can-eat buffet featuring everything in Set 498+ and adding sashimi set, pork belly, premium pork neck, wagyu sirloin, Oscarubi beef, river prawns, and more. Soft drink refills included."
   button: "Buy e-voucher"
-  link: https://netagrill.enjovia.com/buffet/evoucher-neta-grill-premium-buffet-set-399-526-
+  link: https://netagrill.enjovia.com/buffet/evoucher-neta-grill-buffet-set-698-862
   image: /assets/img/home/card-1.jpg
 
 menu_card_3:
-  title: "Premium Buffet Set 699+"
-  text: "All you can eat with Neta Pork Set, Pork Belly, Pork Belly, Pork Belly with Premium Korean Sauce, Beef Tongue, Waki Sirloin Squid, scallops, scallops, river prawns, fresh crayfish, salmon with teriyaki sauce, salmon sashimi, Thai oyster salad, mozzarella cheese."
-  button: "Buy e-voucher"
-  link: https://netagrill.enjovia.com/buffet/evoucher-neta-grill-premium-buffet-set-699-856-
+  title: "Hamayaki Set 858+"
+  text: "A premium all-you-can-eat buffet with everything in Set 498+ and Set 698+, plus Korean oysters, 4-cheese river prawns, lobster, graded Karubi beef, Korean marinated set, salmon sashimi, blue crab, and more. Soft drink refills included"
+  link: https://netagrill.enjovia.com/buffet/evoucher-neta-grill-buffet-set-858-1080
   image: /assets/img/home/card-1.jpg
 
 menu_card_4:
-  title: "Premium Buffet Set 899+"
-  text: "All-you-can-eat with Neta Pork Set, Premium Pork Neck, Beef Tongue, Premium Neta Mixed Seafood Set Crab, Korean oyster, bone marrow, graded karubi beef, Korean pickled set, river prawn sushi, salmon sashimi, yuzu, ponzu, peony shrimp sushi, eel top, wagyu sushi, A3 top eel."
+  title: "Hamayaki Set 1398+"
+  text: "The ultimate dining experience with up to 100 menu items to choose from. Highlights include sashimi crab claws, otoro sushi, Hokkaido scallops, Tajima wagyu karubi, wagyu beef neck, sliced shabu with fresh eggs, grilled eel skewers, and truffle scallops."
   button: "Buy e-voucher"
-  link: https://netagrill.enjovia.com/buffet/evoucher-neta-grill-premium-buffet-899
+  link: https://netagrill.enjovia.com/buffet/evoucher-neta-grill-buffet-set-1398-1625
   image: /assets/img/home/card-1.jpg
 
 delivery:
