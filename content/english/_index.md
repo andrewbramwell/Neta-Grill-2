@@ -5,7 +5,7 @@ title: Home Page
 hero:
   preheading: "Premium"
   heading: "Yakiniku & Sushi Buffet "
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque."
+  text: "Indulge in an authentic Japanese feast at our all-you-can-eat charcoal grill buffet. Enjoy a lavish spread of premium ingredients, with over 100 items to choose from"
   background_image: /assets/img/home/banner.jpg
   button_text: View Menu
   button_link: https://drive.google.com/file/d/1VyfLKDYCFifqqeN8b2b1Bu2ROrEh0MH9/view
@@ -17,7 +17,7 @@ about:
   heading: 
   text: "Welcome to Neta Grill Restaurant, where Yakiniku meets Hamayaki! The perfect combination of premium Japanese imported meats and seafood. Experience melt in the mouth wagyu and fresh lobster cooked to perfection on our charcoal-grills. 
 
-Savor the flavors of Japan with one of our all-you-can-eat buffet sets starting at 499+. With 100 menu items to choose from, there is something for everyone at Neta Grill. Come and experience authentic Japanese cuisine at its finest.
+Savor the flavors of Japan with one of our all-you-can-eat buffet sets starting at 498+. With 100 menu items to choose from, there is something for everyone at Neta Grill. Come and experience authentic Japanese cuisine at its finest.
  "
   image_1: /assets/img/home/banner.jpg
   image_2: /assets/img/home/image-2.jpg
