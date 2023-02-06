@@ -1,7 +1,7 @@
 # left main menu
 [[mainr]]
 name = "Our Menu"
-url = "https://drive.google.com/file/d/1VyfLKDYCFifqqeN8b2b1Bu2ROrEh0MH9/view"
+url = "/menu"
 weight = 1
 
 [[mainr]]
