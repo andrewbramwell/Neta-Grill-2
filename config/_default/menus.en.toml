@@ -1,7 +1,7 @@
 # left main menu
 [[mainr]]
 name = "Our Menu"
-url = "/menu"
+url = "/menu.pdf"
 weight = 1
 
 [[mainr]]
